@@ -5,16 +5,16 @@
 # b="pir hasina"
 # print(a+b)
 
-a=input("1st inpute   ")
-c=input("input a operatio  ")
-b=input("2nd input  ")
+first_number=input("1st inpute   ")
+oparator=input("input a operatio  ")
+second_number=input("2nd input  ")
 
-if c=="+":
-    print(int(a)+int(b))
-if c=="-":
-    print(int(a)-int(b))
-if c=="*":
-    print(int(a)*int(b))
-if c=="/":
-    print(int(a)/int(b))
+if oparator=="+":
+    print(int(first_number)+int(second_number))
+if oparator=="-":
+    print(int(first_number)-int(second_number))
+if oparator=="*":
+    print(int(first_number)*int(second_number))
+if oparator=="/":
+    print(int(first_number)/int(second_number))
 
