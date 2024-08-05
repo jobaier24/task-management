@@ -12,14 +12,18 @@ second_number=input("Enter second input: ")
 
 
 if oparator=="+":
-    print(int(first_number)+int(second_number))
+    sum = int(first_number)+int(second_number)
+    print(f"{first_number} {oparator} {second_number} = {sum}")
 if oparator=="-":
-    print(int(first_number)-int(second_number))
-if oparator=="*":
-    print(int(first_number)*int(second_number))
+    sub = int(first_number)-int(second_number)
+    print(f"{first_number} {oparator} {second_number} = {sub}")
+if oparator == "*":
+    mul = int(first_number)*int(second_number)
+    print(f"{first_number} {oparator} {second_number} = {mul}")
 if oparator=="/":
     if second_number=="0":
         print("any number has not divided by o")
     else:
-        print(int(first_number)/int(second_number))
+        divition = int(first_number)/int(second_number)
+        print(f"{first_number} {oparator} {second_number} = {divition}")
 
