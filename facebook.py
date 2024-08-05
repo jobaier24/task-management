@@ -5,25 +5,30 @@
 # b="pir hasina"
 # print(a+b)
 
-first_number=input("Enter first number: ")
+first_input=input("Enter first number: ")
+first_number = int(first_input)
+
 oparator=input("Enter a oparator (+,-,*,/): ")
-second_number=input("Enter second input: ")
+
+second_input=input("Enter second input: ")
+second_number = int(second_input)
 
 
 
 if oparator=="+":
-    sum = int(first_number)+int(second_number)
+    sum = first_number + second_number
     print(f"{first_number} {oparator} {second_number} = {sum}")
-if oparator=="-":
-    sub = int(first_number)-int(second_number)
+elif oparator=="-":
+    sub = first_number - second_number
     print(f"{first_number} {oparator} {second_number} = {sub}")
-if oparator == "*":
-    mul = int(first_number)*int(second_number)
+elif oparator == "*":
+    mul = first_number * second_number
     print(f"{first_number} {oparator} {second_number} = {mul}")
-if oparator=="/":
-    if second_number=="0":
+elif oparator=="/":
+    if second_number == 0:
         print("any number has not divided by o")
     else:
-        divition = int(first_number)/int(second_number)
+        divition = first_number / second_number
         print(f"{first_number} {oparator} {second_number} = {divition}")
-
+else:
+    print("It is not a valid oparator")
