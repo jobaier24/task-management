@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Management</h1>
+
+    <div>
+        <ul>
+            {% for task in tasks %}
+            <li>{{ task }}</li>
+            {% endfor %}
+            <!-- <li>
+                <div>
+                    <p>Clean the home</p>
+                    <button>edit</button>
+                    <button>Delete</button>
+                    <button>Mark as done</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <p>Clean the home</p>
+                    <button>edit</button>
+                    <button>Delete</button>
+                    <button>Mark as done</button>
+                </div>
+            </li> -->
+
+        </ul>
+    </div>
+
+    <div class="newtask">
+        <form method="post" action="/">
+            <input type="text" name="task" placeholder="Enter a task" required>
+            <button type="submit">Create a new task</button>
+        </form>
+    </div>
+</body>
+
+<style>
+    .newtask {
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
+        
+    }
+</style>
+</html>
