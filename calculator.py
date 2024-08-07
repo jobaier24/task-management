@@ -1,10 +1,3 @@
-# print("hellow ,worl")
-# print("hellow world")
-# #Variable:
-# a="hellow"
-# b="pir hasina"
-# print(a+b)
-
 first_input=input("Enter first number: ")
 first_number = int(first_input)
 
@@ -15,16 +8,16 @@ second_number = int(second_input)
 
 
 
-if oparator=="+":
+if oparator == "+":
     sum = first_number + second_number
     print(f"{first_number} {oparator} {second_number} = {sum}")
-elif oparator=="-":
+elif oparator == "-":
     sub = first_number - second_number
     print(f"{first_number} {oparator} {second_number} = {sub}")
 elif oparator == "*":
     mul = first_number * second_number
     print(f"{first_number} {oparator} {second_number} = {mul}")
-elif oparator=="/":
+elif oparator == "/":
     if second_number == 0:
         print("any number has not divided by o")
     else:
