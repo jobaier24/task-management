@@ -21,6 +21,7 @@ def summation(array):
 
 # get average
 marksum = summation(marks)
+a = summation([20,0, 0,203])
 
 # print("Summation of ",marks, "=",sum )
 avg = marksum / len(marks)
