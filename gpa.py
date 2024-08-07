@@ -8,17 +8,22 @@ for i in range(0,subject_number):
     
 
 
+# extracting fucntions
+
+def summation(array):
+    sum = 0
+    for item in array:
+        sum = sum + item
+    return sum
+
 
 
 
 # get average
-sum = 0
-for mark in marks:
-    sum = sum + mark
-    # print(mark)
+marksum = summation(marks)
 
 # print("Summation of ",marks, "=",sum )
-avg = sum / len(marks)
+avg = marksum / len(marks)
 
 #  continally print grade
 
